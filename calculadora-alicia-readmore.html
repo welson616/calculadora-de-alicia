@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Descubre cómo la calculadora Alicia puede ayudarte con tus tareas matemáticas diarias con una interfaz moderna y fácil de usar." />
+  <title>Descubre la Calculadora Alicia - Herramienta Inteligente</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: #007bff;
+      font-weight: bold;
+    }
+    .read-more {
+      overflow: hidden;
+      max-height: 160px;
+      transition: max-height 0.5s ease;
+    }
+    .read-more.expanded {
+      max-height: 1000px;
+    }
+    .toggle-btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Explora la nueva <span class="highlight">Calculadora Alicia</span></h1>
+    <p>
+      ¿Estás buscando una herramienta inteligente para resolver problemas matemáticos?
+      Conoce <a href="https://welson616.github.io/alculadora-alicia/index.html" target="_blank"><strong>la calculadora alicia</strong></a>, una solución moderna con una interfaz intuitiva, diseñada para estudiantes, profesionales y cualquier persona que busque precisión y rapidez.
+    </p>
+    <div class="read-more" id="more-content">
+      <p>
+        Esta herramienta es más que una calculadora común. Ofrece funciones como operaciones básicas, cálculos científicos y una presentación visual clara que facilita el aprendizaje. Ideal para el entorno educativo y uso personal, su diseño UX/UI está pensado para brindar comodidad y enfoque.
+      </p>
+      <p>
+        Gracias a su estructura responsive, puedes acceder a la calculadora desde cualquier dispositivo: móvil, tablet o computadora. Además, su carga rápida y código optimizado garantizan una experiencia de usuario sin interrupciones.
+      </p>
+      <p>
+        Si eres creador de contenido o un estudiante, integrar <strong>la calculadora alicia</strong> a tu rutina puede ahorrarte tiempo y esfuerzo. Su diseño claro con colores suaves ayuda a reducir la fatiga visual, lo que la convierte en una opción preferida para quienes pasan mucho tiempo estudiando o trabajando.
+      </p>
+      <p>
+        No pierdas la oportunidad de probar esta excelente herramienta. Está desarrollada con los últimos estándares web para asegurar compatibilidad y rendimiento.
+      </p>
+    </div>
+    <button class="toggle-btn" onclick="toggleReadMore()">Leer más</button>
+  </div>
+
+  <script>
+    function toggleReadMore() {
+      const content = document.getElementById('more-content');
+      content.classList.toggle('expanded');
+      const btn = document.querySelector('.toggle-btn');
+      btn.textContent = content.classList.contains('expanded') ? 'Leer menos' : 'Leer más';
+    }
+  </script>
+</body>
+</html>
